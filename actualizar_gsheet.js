@@ -224,7 +224,7 @@ async function main() {
 main();
 
 // Punto de salida
-const minutos = 58;
+const minutos = 59;
 setTimeout(() => {
 	activarMonitor = false;
 	console.log("CULMINANDO PROCESO...");
