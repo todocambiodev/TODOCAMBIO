@@ -1,4 +1,3 @@
-const { time, timeStamp } = require('node:console');
 const { chromium } = require('playwright');
 
 // Estructura de datos global
@@ -8,16 +7,13 @@ const anuncios = {
     ves: { buy: [], sell: [] }
 };
 
-let activarMonitor = true;
-const ti = new Date().getTime()
-
 /**
  * Función para monitorear anuncios P2P en Binance
  */
 async function anunciosP2P(fiat = "COP", tipo = "SELL", metodos = [], monto = "", verificados = false, debug = false) {
 
 	// Ciclo de inicialización
-	while (activarMonitor) {
+	while (true) {
 			let browser;
 			try {
 					// Inicia navegador
@@ -62,7 +58,7 @@ async function anunciosP2P(fiat = "COP", tipo = "SELL", metodos = [], monto = ""
 					let estadoInicial = [];
 
 					// Ciclo de actualización de los anuncios
-					while (activarMonitor) {
+					while (true) {
 							try {
 									const filas = page.locator("tr");
 									const estadoActual = await filas.allInnerTexts();
@@ -148,7 +144,7 @@ async function enviarDatos(url) {
     let anuncioUsdBuy = { precio: "" };
     let anuncioUsdSell = { precio: "" };
 
-    while (activarMonitor) {
+    while (true) {
         try {
             // Espera de ~100ms
             await new Promise(res => setTimeout(res, 100));
