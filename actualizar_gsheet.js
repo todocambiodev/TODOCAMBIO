@@ -191,7 +191,7 @@ async function enviarDatos(url) {
  */
 async function main() {
     try {
-        const url = "https://script.google.com/macros/s/AKfycbzpoFdRQZrmKlLp6XHkojEU4pCl1QOXz5ds8hQ0D-F83EvCYAuIQ7Y4DXGz1Dxejtw/exec";
+        const url = "https://script.google.com/macros/s/AKfycbz5TwtYgFSncX52Cgz1NtAvFhHuHoxOOIB4oVjIxawoqPO3ZIgKLOR4J6PI-O8ev2VKSg/exec";
         const verificados = true;
         const montoVes = "5994";
         const montoCop = "37992";
@@ -220,7 +220,7 @@ async function main() {
 main();
 
 // Punto de salida
-const minutos = 99;
+const minutos = 63;
 setTimeout(() => {
 	activarMonitor = false;
 	console.log("CULMINANDO PROCESO...");
