@@ -193,8 +193,8 @@ async function main() {
     try {
         const url = "https://script.google.com/macros/s/AKfycbz5TwtYgFSncX52Cgz1NtAvFhHuHoxOOIB4oVjIxawoqPO3ZIgKLOR4J6PI-O8ev2VKSg/exec";
         const verificados = true;
-        const montoVes = "5994";
-        const montoCop = "37992";
+        const montoVes = "7299";
+        const montoCop = "36999";
         const montoUsd = "36";
         const debug = false;
 
